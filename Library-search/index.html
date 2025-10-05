@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Library Search Lite — Modern Digital Library</title>
+    <meta
+      name="description"
+      content="Modern responsive library search application with dark/light theme support"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Modern Responsive Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="header-left">
+          <a class="brand" href="#">
+            <span class="brand-icon">📚</span>
+            <span class="brand-text">Library Search Lite</span>
+          </a>
+        </div>
+        
+        <div class="header-center">
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+              <li><a href="#search" class="nav-link">Search</a></li>
+              <li><a href="#books" class="nav-link">Books</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="header-right">
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle between light and dark theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+          
+          <button
+            id="navToggle"
+            class="mobile-nav-toggle"
+            aria-expanded="false"
+            aria-controls="mobileNavList"
+            aria-label="Toggle mobile navigation"
+          >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation Overlay -->
+      <div id="mobileNavOverlay" class="mobile-nav-overlay">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul id="mobileNavList" class="mobile-nav-list">
+            <li><a href="#search" class="mobile-nav-link">🔍 Search</a></li>
+            <li><a href="#books" class="mobile-nav-link">📖 Books</a></li>
+            <li><a href="#about" class="mobile-nav-link">ℹ️ About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container">
+      <h1 class="visually-hidden">Library Search Lite - Modern Digital Library</h1>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="hero-title">Discover Your Next Great Read</h2>
+          <p class="hero-subtitle">Search through our curated collection of books with powerful filters and bookmarking</p>
+        </div>
+      </section>
+
+      <!-- Enhanced Search Panel -->
+      <section id="search" class="search-section" aria-labelledby="search-title">
+        <div class="search-container">
+          <h2 id="search-title" class="section-title">
+            <span class="title-icon">🔍</span>
+            Search & Filter Books
+          </h2>
+          <div class="search-controls">
+            <div class="search-input-group">
+              <label for="q" class="visually-hidden">Search by title, author or tag</label>
+              <div class="input-wrapper">
+                <span class="input-icon">🔍</span>
+                <input
+                  id="q"
+                  type="search"
+                  placeholder="Search title, author or tag..."
+                  aria-describedby="search-help"
+                  class="search-input"
+                />
+              </div>
+            </div>
+            
+            <div class="filter-group">
+              <select id="tagFilter" aria-label="Filter by tag" class="filter-select">
+                <option value="">All tags</option>
+              </select>
+              
+              <div class="action-buttons">
+                <button id="clearBtn" class="btn btn-secondary" type="button">
+                  <span class="btn-icon">✖</span>
+                  Clear All
+                </button>
+                <button id="showBookmarksBtn" class="btn btn-primary" type="button" aria-pressed="false">
+                  <span class="btn-icon">★</span>
+                  My Bookmarks
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="search-help" class="visually-hidden">Search results will be updated as you type</div>
+        </div>
+      </section>
+
+      <!-- Enhanced Books Section -->
+      <section id="books" class="books-section" aria-labelledby="books-title">
+        <div class="books-container">
+          <div class="section-header">
+            <h2 id="books-title" class="section-title">
+              <span class="title-icon">📖</span>
+              Books Collection
+            </h2>
+            <p id="stats" class="stats-display" role="status" aria-live="polite"></p>
+          </div>
+          <ul id="bookList" class="books-grid" aria-live="polite"></ul>
+        </div>
+      </section>
+
+      <!-- Enhanced About Section -->
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <h2 class="section-title">
+            <span class="title-icon">ℹ️</span>
+            About This Library
+          </h2>
+          <div class="about-content">
+            <p class="about-text">
+              Experience a modern, responsive library search application featuring intuitive navigation, 
+              powerful search capabilities, and seamless dark/light theme switching. Built with accessibility 
+              and user experience in mind.
+            </p>
+            <div class="features-grid">
+              <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <h3>Smart Search</h3>
+                <p>Search by title, author, or tags with real-time results</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon">★</span>
+                <h3>Bookmarks</h3>
+                <p>Save your favorite books with localStorage persistence</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon">🌙</span>
+                <h3>Theme Toggle</h3>
+                <p>Switch between light and dark modes seamlessly</p>
+              </div>
+              <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Responsive</h3>
+                <p>Optimized for mobile, tablet, and desktop devices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="brand-icon">📚</span>
+            <span>Library Search Lite</span>
+          </div>
+          <div class="footer-links">
+            <a href="#search" class="footer-link">Search</a>
+            <a href="#books" class="footer-link">Books</a>
+            <a href="#about" class="footer-link">About</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <small>&copy; 2024 Your Team • Vibe Coding (Web Track — Option B)</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "b1",
+    "title": "Learning Python Fast",
+    "author": "A. Gupta",
+    "year": 2021,
+    "tags": [
+      "python",
+      "beginner"
+    ]
+  },
+  {
+    "id": "b2",
+    "title": "Accessible Web Design",
+    "author": "M. Rao",
+    "year": 2022,
+    "tags": [
+      "web",
+      "a11y",
+      "ui"
+    ]
+  },
+  {
+    "id": "b3",
+    "title": "Data Structures in JS",
+    "author": "K. Singh",
+    "year": 2020,
+    "tags": [
+      "javascript",
+      "ds"
+    ]
+  },
+  {
+    "id": "b4",
+    "title": "Intro to Databases",
+    "author": "N. Sharma",
+    "year": 2019,
+    "tags": [
+      "sql",
+      "db"
+    ]
+  },
+  {
+    "id": "b5",
+    "title": "Clean Frontend Architecture",
+    "author": "R. Iyer",
+    "year": 2023,
+    "tags": [
+      "frontend",
+      "architecture"
+    ]
+  },
+  {
+    "id": "b6",
+    "title": "Machine Learning Notes",
+    "author": "S. Verma",
+    "year": 2018,
+    "tags": [
+      "ml",
+      "notes"
+    ]
+  },
+  {
+    "id": "b7",
+    "title": "Effective Git",
+    "author": "T. Mehta",
+    "year": 2024,
+    "tags": [
+      "git",
+      "version-control"
+    ]
+  },
+  {
+    "id": "b8",
+    "title": "Design Systems 101",
+    "author": "P. Kaur",
+    "year": 2022,
+    "tags": [
+      "design",
+      "systems"
+    ]
+  },
+  {
+    "id": "b9",
+    "title": "Networking Basics",
+    "author": "H. Ali",
+    "year": 2017,
+    "tags": [
+      "network",
+      "basics"
+    ]
+  },
+  {
+    "id": "b10",
+    "title": "Practical Linux",
+    "author": "Z. Khan",
+    "year": 2020,
+    "tags": [
+      "linux",
+      "cli"
+    ]
+  }
+]
